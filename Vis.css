@@ -8,7 +8,7 @@ body {
 
 #container  {
 
-
+color: blue;
 
 }
 #logo {
@@ -52,7 +52,7 @@ a:hover {
 }
 /* Odwiedzony link */
 a:visited {
-color: ;
+color: red;
 }
 /* Nieodwiedzony link */
 a:link {
