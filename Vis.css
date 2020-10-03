@@ -1,8 +1,8 @@
 body {
-    background-color: #13120f;
+    background-color: #0a0a08;
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lato';
     font-size: 20px;
-    color: #13120f;
+    
     
 }
 
@@ -52,11 +52,11 @@ a:hover {
 }
 /* Odwiedzony link */
 a:visited {
-color: red;
+color: #c9b920;
 }
 /* Nieodwiedzony link */
 a:link {
-color: antiquewhite;
+color: #c9b920;
 }
 
 
