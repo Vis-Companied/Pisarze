@@ -1,0 +1,61 @@
+body {
+    background-color: #dddcd6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lato';
+    font-size: 20px;
+    
+    
+}
+
+#container  {
+
+color: blue;
+
+}
+#logo {
+user-select: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Linki */
+/* Link po najechaniu na Link */
+a:hover {
+    color: #b99301;
+}
+/* Odwiedzony link */
+a:visited {
+color: #c9b920;
+}
+/* Nieodwiedzony link */
+a:link {
+color: #c9b920;
+}
+
