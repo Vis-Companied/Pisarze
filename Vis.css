@@ -3,6 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lato';
     font-size: 20px;
     color: #13120f;
+    
 }
 
 #container  {
@@ -11,7 +12,7 @@ body {
 
 }
 #logo {
-;
+user-select: none;
 
 }
 
