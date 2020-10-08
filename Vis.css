@@ -64,7 +64,7 @@ a {
 #Lampa {
     position:relative;
 }
-input[value="off"] :checked ~
+div#AnLamp > input[value="off"] :checked ~
 #Kabel {
     -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
        -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
@@ -72,7 +72,7 @@ input[value="off"] :checked ~
          -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
             box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
 }
-input[value="off"]:checked ~
+div#AnLamp > input[value="off"]:checked ~
 #Kabel:after {
     -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
        -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
@@ -81,7 +81,7 @@ input[value="off"]:checked ~
             box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
 }
 
-input {
+div#AnLamp > input {
     position: absolute;
     width: 90px;
     height: 70px;
@@ -92,20 +92,20 @@ input {
     cursor: pointer;
 }
 
-input[value="on"] {
+div#AnLamp > input[value="on"] {
     top: 150px;
 }
-input[value="off"] {
+div#AnLamp > input[value="off"] {
     top: -100px;
 }
-input[value="on"]:checked {
+div#AnLamp > input[value="on"]:checked {
     top: -100px;
 }
-input[value="on"]:checked + input[value="off"] {
+div#AnLamp > input[value="on"]:checked + input[value="off"] {
     top: 150px;
 }
 
-label {
+div#AnLamp > label {
     width: 51px;
     height: 51px;
     top: 164px;
@@ -123,8 +123,7 @@ label {
          -o-animation: AnLampa .9s ease-in-out 0s infinite alternate;
             animation: AnLampa .9s ease-in-out 0s infinite alternate;
 }           
-input[value="off"]:checked ~
-label {
+div#AnLamp > input[value="off"]:checked ~ label {
     background: rgba(255,255,255,0.03);
     -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
        -moz-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
@@ -132,8 +131,7 @@ label {
          -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
             box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
 }
-input[value="on"]:checked ~
-label {
+div#AnLamp > input[value="on"]:checked ~ label {
     background: rgba(255,255,255,1);
     -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
        -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
@@ -142,8 +140,7 @@ label {
             box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
 }
 
-input[value="off"]:checked ~
-label:after {
+div#AnLamp > input[value="off"]:checked ~ label:after {
     content: " ";
     width: 15px;
     height: 15px;
@@ -268,6 +265,77 @@ label:after {
         transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
     }
 }
+
+header {
+    height: 120px;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+}
+main {
+    width: 70%;
+}
+aside {
+    width: 30%;
+}
+/* Logowanie */
+.logowanie {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    position: relative;
+    width: 580px;
+    height: 500px;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background: #0a0a08;
+}
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #0a0a08;
+    z-index: -1;
+}
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #0a0a08;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box:before,
+.box:after {
+   background: linear-gradient(235deg, #ffd920, #fff1c3, #ffd920); 
+}
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+/* Koniec Logowania */
+
 
 /* Koniec Animacji Lampy */
 
