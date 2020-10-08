@@ -17,11 +17,11 @@ body {
     font-style: italic;
     font-size: 4.2vmin;
     line-height: 4.7vmin;
-    color:#dddcd6;
+    color: #aca7a7;
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #dddcd6;
+    background: #aca7a7;
 }
 a {
     color: #dddcd6;
@@ -33,7 +33,7 @@ a {
 }
 #Kabel {
     position: relative;
-    background-color: #dddcd6;
+    background-color: #000000;
     width: 2px;
     height: 150px;
     left: 50%;
@@ -55,7 +55,7 @@ a {
     left: -5px;
     top: 100%;
     position: absolute;
-    border-bottom: 15px solid #dddcd6;
+    border-bottom: 15px solid #080808;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     height: 0;
@@ -301,7 +301,7 @@ aside {
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     align-items: center;
-    background: #dddcd6;
+    background: #c9c7c7;
 }
 .box:before {
     content: '';
@@ -310,7 +310,7 @@ aside {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: #dddcd6;
+    background: #c9c7c7;
     z-index: -1;
 }
 .box:after {
@@ -320,13 +320,13 @@ aside {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: #dddcd6;
+    background: #c9c7c7;
     z-index: -2;
     filter: blur(40px);
 }
 .box:before,
 .box:after {
-   background: linear-gradient(235deg, #ffd920, #fff1c3, #ffd920); 
+   background: linear-gradient(235deg, #89ff00, #ffffff, #00bcd4); 
 }
 .content {
     padding: 20px;
