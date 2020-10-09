@@ -267,7 +267,7 @@ div#AnLamp > input[value="off"]:checked ~ label:after {
 }
 
 header {
-    height: 120px;
+    height: 110px;
 }
 .container {
     display: flex;
@@ -276,7 +276,7 @@ header {
     margin: auto;
 }
 main {
-    width: 70%;
+    width: 65%;
 }
 aside {
     width: 30%;
@@ -293,8 +293,8 @@ aside {
 
 .box {
     position: relative;
-    width: 580px;
-    height: 500px;
+    width: 600px;
+    height: 420px;
     padding-bottom: 150px;
     padding-top: 10px;
     display: flex;
