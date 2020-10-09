@@ -12,7 +12,7 @@
 		<meta name="creation-date" content="30.09.2020">
 		<meta name="last-modified" content="Na bieżąco">
         <meta name="description" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV">
-        <link rel="stylesheet" href="Vis.css" type="text/css">
+        <link rel="stylesheet" id="pagestyle" href="Vis.css" type="text/css">
 
        
         <script src="Vis.js"></script>
@@ -22,9 +22,9 @@
     <body id="buk">
         <header>
             <!-- Zmienny Motyw-->
-            <div id="AnLamp">  
-                <input type="radio" name="switch" value="on" onclick="initate()"; />
-                <input type="radio" name="switch" value="off" checked="checked" onclick="initate()"; />
+            <div id="AnLamp">
+                <input type="radio" id="Vis.css" name="switch" value="on" onclick="initate()"; />
+                <input type="radio" id="VisN.css" name="switch" value="off" checked="checked" onclick="initate()"; />
                 <label for="switch"></label>
                 <div id="Kabel"></div>
                 <div id="Lampa">
@@ -48,8 +48,6 @@
                                     
                                     <input type="password" name="Hasło" id="password">
                                 </p>
-                                <button id="stylesheet1" > Default Style Sheet </button>
-                                <button id="stylesheet2" > Dark Style Sheet </button>
                                 
                             </div>
                         </div>
