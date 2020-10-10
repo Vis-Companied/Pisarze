@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #aca7a7;
+    background: #919191;
 }
 a {
     color: #dddcd6;
@@ -281,6 +281,7 @@ main {
 aside {
     width: 30%;
 }
+/* Koniec Animacji Lampy */
 /* Logowanie */
 .logowanie {
     margin: 0;
@@ -333,11 +334,71 @@ aside {
     box-sizing: border-box;
     color: #ffffff;
 }
-
 /* Koniec Logowania */
 
 
-/* Koniec Animacji Lampy */
+/* Logowanie w boxie */
+div#Login > .Loginihaslo {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: none;
+    }
+    div#Login > .box1 {
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #191919;
+        text-align: center;
+    }
+    .box1 h1{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .box1 input[type ="text"],.box1 input[type ="password"]{
+        border-radius: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+    .box1 input[type ="text"]:focus,.box1 input[type ="password"]:focus {
+        width: 280px;
+        border-color: #2ecc71;
+    
+    }
+    .box1 input[type="submit"] {
+        border-radius: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    .box1 input[type="submit"]:hover {
+        background: #2ecc71;
+    
+    }
+    /* Koniec logowania w boxie */
+
+
 
 
 
