@@ -345,18 +345,23 @@ background: #0a0a08;
 }
 div#Login > .box1 {
     width: 300px;
-    padding: 40px;
+    padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #191919;
+    background: none;
     text-align: center;
+    
 }
 .box1 h1{
-    color: white;
+    color: #71716e;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
+    user-select: none;
+    border-bottom: 1px solid #c9b920;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 .box1 input[type ="text"],.box1 input[type ="password"]{
     border-radius: 0;
@@ -403,6 +408,7 @@ user-select: none;
 top: 100px;
 right: 950px;
 position: absolute;
+filter: blur(0.7px);
 }
 h2 {
     color: white;
@@ -418,7 +424,7 @@ h2 {
     padding: 10px ;
 }
 
-
+/* Koniec Loga */
 
 
 
