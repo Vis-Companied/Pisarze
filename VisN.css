@@ -384,7 +384,7 @@ div#Login > .Loginihaslo {
         display: block;
         margin: 20px auto;
         text-align: center;
-        border: 2px solid #2ecc71;
+        border: 2px solid #3498db;
         padding: 14px 40px;
         outline: none;
         color: white;
@@ -393,7 +393,7 @@ div#Login > .Loginihaslo {
         cursor: pointer;
     }
     .box1 input[type="submit"]:hover {
-        background: #2ecc71;
+        background: #3498db;
     
     }
     /* Koniec logowania w boxie */

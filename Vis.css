@@ -397,28 +397,41 @@ div#Login > .box1 {
 }
 /* Koniec logowania w boxie */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-#logo {
+/* Logo */
+div#logoVis > .logo {
 user-select: none;
-
-
+top: 100px;
+right: 950px;
+position: absolute;
 }
-*/
+h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    height: 100px;
+    color: #c9b920;
+    border-bottom: 6px solid #c9b920;
+    margin-bottom: 5px;
+    padding: 10px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
