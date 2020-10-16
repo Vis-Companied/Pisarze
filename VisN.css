@@ -297,7 +297,7 @@ div#Login > .Loginihaslo {
 margin: 0;
 padding: 0;
 font-family: sans-serif;
-background: #0a0a08;
+background: none;
 }
 div#Login > .box1 {
     width: 300px;
@@ -311,11 +311,11 @@ div#Login > .box1 {
     
 }
 .box1 h1{
-    color: #71716e;
+    color: #2c3e50;
     text-transform: uppercase;
     font-weight: 400;
     user-select: none;
-    border-bottom: 1px solid #c9b920;
+    border-bottom: 1px solid #3498db;
     margin-bottom: 1px;
     padding: 5px;
     position: center;
@@ -327,7 +327,7 @@ div#Login > .box1 {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #fff0c2;
+    border: 2px solid  #3498db;
     padding: 14px 10px;
     width: 200px;
     outline: none;
@@ -337,8 +337,8 @@ div#Login > .box1 {
 }
 .box1 input[type ="text"]:focus,.box1 input[type ="password"]:focus {
     width: 280px;
-    border-color: #dcc170; 
-
+    border-color: #2ecc71; 
+    
 }
 .box1 input[type="submit"] {
     border-radius: 0;
@@ -346,7 +346,7 @@ div#Login > .box1 {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #ebba24;
+    border: 2px solid #3498db;
     padding: 14px 40px;
     outline: none;
     color: white;
@@ -355,7 +355,7 @@ div#Login > .box1 {
     cursor: pointer;
 }
 .box1 input[type="submit"]:hover {
-    background: #ebba24;
+    background: #3498db;
 
 }
 /* Koniec logowania w boxie */
@@ -376,8 +376,8 @@ h2 {
     right: 50px;
     top: 100px;
     height: 100px;
-    color: #c9b920;
-    border-bottom: 6px solid #c9b920;
+    color: #3498db;
+    border-bottom: 6px solid #3498db;
     margin-bottom: 5px;
     padding: 10px ;
 }
@@ -396,8 +396,8 @@ font-family: "montserrat"
 
 .Card {
     position: absolute;
-    border-bottom: 1px solid #c9b920;
-    border-top: 1px solid #ebba24;
+    border-bottom: 1px solid #3498db;
+    border-top: 1px solid #2ecc71;
     /*top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);*/
@@ -438,7 +438,7 @@ font-family: "montserrat"
     color: #ffffff;
     text-align: center;
     justify-content: center;
-    border: #71716e 2px;
+    border: #3498db 2px;
     font-size: 50px;
     filter: blur(1px);
    
