@@ -15,14 +15,14 @@
 div#AnimatedBackground > .large-header {
     position: relative;
     width: 100%;
-    background: #333;
+    /* background: #333; */
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    z-index: 1;
+    z-index: -1;
 }
 #large-header {
-    background-image: /* URL */;
+    background-image:url('img/nightmare.jpg');/* URL */
 }
 .main-title {
     position: absolute;
@@ -307,7 +307,7 @@ div#AnLamp > input[value="off"]:checked ~ label:after {
 }
 
 header {
-    height: 110px;
+    /* height: 110px; */
 }
 .container {
     display: flex;

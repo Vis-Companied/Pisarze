@@ -1,35 +1,22 @@
 <html lang="en">
-	<head>
-	    <title>Vis</title>
-		<meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8">
-		<meta name="robots" content="index">
-		<meta name="author" content="MW/RL/BS">
-		<meta http-equiv="Content-Language" content="en">
-		<meta name="publisher" content="Wydawnictwo Vis">
-		<meta name="copyrights" content="Prawa autorskie zastrzeżone">
-		<meta name="generator" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV,">
-		<meta name="keywords" content="Strona Vis, Vis">
-		<meta name="creation-date" content="30.09.2020">
-		<meta name="last-modified" content="Na bieżąco">
+    <head>
+        <title>Vis</title>
+        <meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8">
+        <meta name="robots" content="index">
+        <meta name="author" content="MW/RL/BS">
+        <meta http-equiv="Content-Language" content="en">
+        <meta name="publisher" content="Wydawnictwo Vis">
+        <meta name="copyrights" content="Prawa autorskie zastrzeżone">
+        <meta name="generator" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV,">
+        <meta name="keywords" content="Strona Vis, Vis">
+        <meta name="creation-date" content="30.09.2020">
+        <meta name="last-modified" content="Na bieżąco">
         <meta name="description" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV">
         <link rel="stylesheet" id="pagestyle" href="Vis.css" type="text/css">
         <script src="https://kit.fontawesome.com/14208e411b.js" crossorigin="anonymous"></script>
-
-       
         <script src="Vis.js"></script>
-        
-
     </head>
-    <!-- TŁO -->
-    <div id="AnimatedBackground">
-        <div id="large-header" class="large-header">
-            <canvas id="demo-canvas"></canvas>
-           <!--  <h1 class="main-title">Tekst Pogrubiony <span class="thin"> Tekst cienki</span>  -->
-        </div>
-    </div>
-
     <body id="buk">
-        
         <header>
             <!-- Zmienny Motyw --> 
             <div id="AnLamp">
@@ -37,66 +24,61 @@
                 <input type="radio" id="VisN.css" name="switch" value="off" checked="checked" onclick="initate()"; />
                 <label for="switch"></label>
                 <div id="Kabel"></div>
-                <div id="Lampa">
-                </div>
+                <div id="Lampa"></div>
             </div>
-        </header>
+        </header> 
+        <!-- TŁO -->
+        <div id="AnimatedBackground">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <!-- <h1 class="main-title">Tekst Pogrubiony <span class="thin"> Tekst cienki</span> -->
+            </div>
+        </div>
         <!-- Rejestracja/Logowanie -->
         <div class="container">
             <main>
 
             </main>
             <aside>
-                <div>
-                    <div class="logowanie">
-                       <div class="box"> 
-                            <div class="content">
-                            
-                           
-                        <div class="Card">
-                            <div class="card middle">
-                                <div class="front">
-                                           <h3>Vis</h3>
-                                           <img src="img/lefz.svg">
-                                </div>
+                <div class="logowanie">
+                    <div class="box"> 
+                        <div class="content">
+                            <!--
+                            <div class="Card">
+                                <div class="card middle">
+                                    <div class="front">
+                                        <h3>Vis</h3>
+                                        <img src="img/lefz.svg">
+                                    </div>
 
-                                        <div class="back">
-                                            <div class="back-content middle">
-                                                <div id="Login">
-                                                    <div class="Loginihaslo">
-                                                       <from class="box1" action="Vis.html" method="post">
-                                                           
-                                                             <h1>Login</h1>
-                                                                <input type="text" name="" placeholder="UserName">
-                                                               <input type="password" name="" placeholder="Password">
-                                                               <input type="submit" value="Login"> <!--bs-->
-                                                       </from>
-                                               </div>
-                                            </div>
+                                    <div class="back">
+                                        <div class="back-content middle">
+                                            <div id="Login">        tu sie zaczyna
+                                                <div class="Loginihaslo">
+                                                    <from class="box1" action="Vis.html" method="post">
+                                                        <h1>Login</h1>
+                                                        <input type="text" name="" placeholder="UserName">
+                                                        <input type="password" name="" placeholder="Password">
+                                                        <input type="submit" value="Login">
+                                                    </from>
+                                                </div>
+                                            </div>                  Login konczy sie tutaj
                                         </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-
-                                <p>
-                                        
-                                            </div>
-                            </div>
-                        
-                                </p>
-                                </aside>
-                            </div>
+                            -->
                         </div>
                     </div>
                 </div>
-            
+            </aside>
         </div>
-       <!-- <div id="logoVis">
-            <div class="logo">
-                <img src="img/lefz.svg" ></src>
-                    <h2>Vis</h2>   
-                        </aside>
-            </div>
+        <!-- <div id="logoVis">
+        <div class="logo">
+        <img src="img/lefz.svg" ></src>
+        <h2>Vis</h2>   
+        </aside>
+        </div>
         </div>-->
         <!-- Ikonki do odnośników[Discord, Face Book, github, Code branch(Mozna czyms innym zastapic to :))]
         <i class="fab fa-discord"></i>
@@ -104,5 +86,7 @@
         <i class="fab fa-github"></i>
         <i class="fas fa-code-branch"></i>
         -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="Tlo.js"></script>
     </body>
 </html>
