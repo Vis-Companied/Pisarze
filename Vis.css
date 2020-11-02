@@ -3,11 +3,11 @@
     font-style: italic;
     font-size: 4.2vmin;
     line-height: 4.7vmin;
-    color: #ffffff;
+    
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #0a0a08;
+   
 }
 */
 /* AnimowanY Background */
@@ -306,9 +306,7 @@ div#AnLamp > input[value="off"]:checked ~ label:after {
     }
 }
 
-header {
-    /* height: 110px; */
-}
+
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -322,18 +320,48 @@ aside {
     width: 30%;
 }
 /* LOGOWANIE MODAL */
+#MyBtn {
+      position: absolute;
+      top: 1%;
+      left: 95%;
+  }
+
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-}
-
-
-
-
-
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 50%;
+    top: 10%;
+    width: 40%; /* Full width */
+    height: 60%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: none;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* KONIEC LOGOWANIA MODAL */
 /* Koniec Animacji Lampy */
 /*

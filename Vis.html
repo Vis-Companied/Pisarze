@@ -1,6 +1,7 @@
-<html lang="en">
+'<html lang="en">
     <head>
         <title>Vis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8">
         <meta name="robots" content="index">
         <meta name="author" content="MW/RL/BS">
@@ -16,7 +17,7 @@
         <script src="https://kit.fontawesome.com/14208e411b.js" crossorigin="anonymous"></script>
         <script src="Vis.js"></script>
     </head>
-    <body id="buk">
+    <body >
         <header>
             <!-- Zmienny Motyw --> 
             <div id="AnLamp">
@@ -35,19 +36,20 @@
             </div>
         </div>
         <!-- LOGOWANIE MODAL-->
-                <div class="LOgowanie">
-        <!-- Trigger/Open The Modal-->    
-        <button id="MyBtn">Zaloguj się</button>      
-        
-        <!-- The Modal-->
-        <div class="modal-content">
-        
+                
+        <!-- Trigger/Open The Modal -->
+        <i class="fas fa-user"></i>
+        <button id="myBtn">Zaloguj się</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+        <span class="close">&times;</span>
+        <!--TU WKLEIĆ MODALA DIVY, bd wiedział ocb -->
+    
+  </div>
 
+</div>
 
-
-
-
-                </div>
+                
                 <!-- KONIEC LOGOWANIA MODAL -->
         <!--
          Rejestracja/Logowanie 
@@ -106,5 +108,6 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="Tlo.js"></script>
+        <script src="modal.js"></script>
     </body>
 </html>
