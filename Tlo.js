@@ -85,7 +85,7 @@
         }
         function scrollCheck() {
             if(document.body.scrollTop > height) animateHeader = false;
-            else animateHeader = ture;
+            else animateHeader = true;
         }
         function resize() {
             width = window.innerWidth;

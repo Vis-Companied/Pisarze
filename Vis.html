@@ -1,4 +1,4 @@
-'<html lang="en">
+<html lang="en">
     <head>
         <title>Vis</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,61 @@
         <script src="https://kit.fontawesome.com/14208e411b.js" crossorigin="anonymous"></script>
         <script src="Vis.js"></script>
     </head>
-    <body >
+    <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close"><i class="far fa-times-circle"></i></span>
+                  <!--TU WKLEIĆ MODALA DIVY, bd wiedział ocb -->
+                  <div id="account-container">
+                      <div class="form-container sign-up-container">
+                          <form action="#">
+                              <h1>Stwórz Użytkownika</h1>
+                              <div class="social-container">
+                                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="#" class="social"><i class="fab fa-discord"></i></a>
+                                  <a href="#" class="social"><i class="fab fa-github"></i></a>
+                              </div>
+                              <span>Utwórz konto!</span>
+                              <input type="text" placeholder="Name" />
+                              <input type="email" placeholder="Email" />
+                              <input type="password" placeholder="Password" />
+                              <button>Utwórz</button>
+                          </form>
+                      </div>
+                      <div class="form-container sign-in-container">
+                          <form action="#">
+                              <h1>Zaloguj się</h1>
+                              <div class="social-container">
+                                  <span>Lub zaloguj się za pomocą:</span><br>
+                                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="#" class="social"><i class="fab fa-discord"></i></a>
+                                  <a href="#" class="social"><i class="fab fa-github"></i></a>
+                              </div>
+                              
+                              <input type="email" placeholder="Email" />
+                              <input type="password" placeholder="Password" />
+                              <a href="#">Zapomniałem hasło</a>
+                              <button>Zaloguj Się</button>
+                          </form>
+                      </div>
+                      <div class="overlay-container">
+                          <div class="overlay">
+                              <div class="overlay-panel overlay-left">
+                                  <h1>Witamy W Vis!</h1>
+                                  <p>Cieszymy się że chcesz do nas dołączyć !<br>
+                                       ~Zespół Vis-Companied</p>
+                                  <button class="ghost" id="signIn">Zaloguj Się</button>
+                              </div>
+                              <div class="overlay-panel overlay-right">
+                                  <h1>Witamy!</h1>
+                                  <p>Nie masz konta? Zarejestruj się kilka ruchami myszki!</p>
+                                  <button class="ghost" id="signUp">Zarejestruj Się</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
         <header>
             <!-- Zmienny Motyw --> 
             <div id="AnLamp">
@@ -38,16 +92,8 @@
         <!-- LOGOWANIE MODAL-->
                 
         <!-- Trigger/Open The Modal -->
-        <i class="fas fa-user"></i>
-        <button id="myBtn">Zaloguj się</button>
-<div id="myModal" class="modal">
-  <div class="modal-content">
-        <span class="close">&times;</span>
-        <!--TU WKLEIĆ MODALA DIVY, bd wiedział ocb -->
-    
-  </div>
-
-</div>
+        
+       <button id="myBtn">Zaloguj się</button>
 
                 
                 <!-- KONIEC LOGOWANIA MODAL -->

@@ -23,3 +23,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('account-container');
+
+signUpButton.addEventListener('click', () => {
+  console.log('klik 1');
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+  console.log('klik 2');
+	container.classList.remove("right-panel-active");
+});
