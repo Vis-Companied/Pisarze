@@ -519,7 +519,7 @@ aside {
 }
 
 .overlay {
-	background: #FF416C; #0b0f19 #212936
+	background: #FF416C; 
 	background: -webkit-linear-gradient(to right, #0b0f19, #212936);
 	background: linear-gradient(to right, #0b0f19, #212936);
 	background-repeat: no-repeat;
