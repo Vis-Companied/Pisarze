@@ -22,6 +22,9 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+
+
+  // ZMIANA LOGINU NA REJESTRACJE I ODWROTNIE W LOGOWANIU
 }
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
