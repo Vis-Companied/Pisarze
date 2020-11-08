@@ -22,9 +22,7 @@ div#AnimatedBackground > .large-header {
     background-position: center center;
     z-index: -1;
 }
-#large-header {
-    
-}
+
 .main-title {
     position: absolute;
     margin: 0;
