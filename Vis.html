@@ -1,11 +1,12 @@
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
         <title>Vis</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8">
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8"> -->
         <meta name="robots" content="index">
         <meta name="author" content="MW/RL/BS">
-        <meta http-equiv="Content-Language" content="en">
         <meta name="publisher" content="Wydawnictwo Vis">
         <meta name="copyrights" content="Prawa autorskie zastrzeżone">
         <meta name="generator" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV,">
@@ -35,7 +36,7 @@
                   
                   <div id="account-container">
                       <div class="form-container sign-up-container">
-                          <form action="#">
+                          <form action="rejestracja.php" method="POST">
                               <h1>Stwórz Użytkownika</h1>
                               <div class="social-container">
                                   <a href="#" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -43,14 +44,14 @@
                                   <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
                               <span>Utwórz konto!</span>
-                              <input type="text" placeholder="Name" />
-                              <input type="email" placeholder="Email" />
-                              <input type="password" placeholder="Password" />
+                              <input name="nazwa" type="text" placeholder="Name" />
+                              <input name="email" type="email" placeholder="Email" />
+                              <input name="haslo" type="password" placeholder="Password" />
                               <button>Utwórz</button>
                           </form>
                       </div>
                       <div class="form-container sign-in-container">
-                          <form action="#">
+                          <form action="Login.php" method="POST">
                               <h1>Zaloguj się</h1>
                               <div class="social-container">
                                   <span>Lub zaloguj się za pomocą:</span><br>
@@ -59,8 +60,8 @@
                                   <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
                               
-                              <input type="email" placeholder="Email" />
-                              <input type="password" placeholder="Password" />
+                              <input name="email" type="email" placeholder="Email" />
+                              <input name="haslo" type="password" placeholder="Password" />
                               <a href="#">Niepamiętam Hasła.</a>
                               <button>Zaloguj Się</button>
                           </form>
