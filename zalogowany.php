@@ -17,5 +17,6 @@
 <body>
     Hello, <?php echo $_SESSION['nazwa'];?>!
     <a href="wyloguj.php">Wyloguj</a>
+
 </body>
 </html>
