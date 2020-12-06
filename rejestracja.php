@@ -23,7 +23,7 @@ session_start();
         $haslo_post = $_POST['haslo'];
         $haslo = htmlentities($haslo_post, ENT_QUOTES, "UTF-8");
 
-        $zapytanie = $connection->query("SELECT * FROM konta_uzytkownikow WHERE Nazwa_Użytkownika='$nazwa' OR Email='$email'");
+        $zapytanie = $connection->query("SELECT * FROM konta_uzytkownikow WHERE nazwa_uzytkownika='$nazwa' OR email='$email'");
         $czyistnieje = $zapytanie->num_rows;
 
         if($czyistnieje > 0){
