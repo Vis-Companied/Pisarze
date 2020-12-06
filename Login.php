@@ -15,8 +15,7 @@
     else {
         $email_post = $_POST['email'];
         $email = htmlentities($email_post, ENT_QUOTES, "UTF-8");
-        $haslo_post = $_POST['haslo'];
-        $haslo = htmlentities($haslo_post, ENT_QUOTES, "UTF-8");
+        $haslo = $_POST['haslo'];
 
         $rezultat = $connection->query("SELECT * FROM konta_uzytkownikow WHERE email='$email'");
         $czyistnieje = $rezultat->num_rows;
