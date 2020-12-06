@@ -21,7 +21,7 @@ session_start();
         $email_post = $_POST['email'];
         $email = htmlentities($email_post, ENT_QUOTES, "UTF-8");
         $haslo_post = $_POST['haslo'];
-        $haslo = htmlentities($haslo_post, ENT_QUOTES, "UTF-8");
+        $haslo = password_hash($haslo_post, PASSWORD_DEFAULT);
 
         $zapytanie = $connection->query("SELECT * FROM konta_uzytkownikow WHERE nazwa_uzytkownika='$nazwa' OR email='$email'");
         $czyistnieje = $zapytanie->num_rows;

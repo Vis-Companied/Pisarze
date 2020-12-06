@@ -18,17 +18,21 @@
         $haslo_post = $_POST['haslo'];
         $haslo = htmlentities($haslo_post, ENT_QUOTES, "UTF-8");
 
-        $rezultat = $connection->query("SELECT * FROM konta_uzytkownikow WHERE email='$email' AND haslo='$haslo'");
+        $rezultat = $connection->query("SELECT * FROM konta_uzytkownikow WHERE email='$email'");
         $czyistnieje = $rezultat->num_rows;
       
         if($czyistnieje > 0){
             $dane = $rezultat->fetch_assoc();
-            $_SESSION['nazwa'] = $dane['nazwa_uzytkownika']; 
-            header('Location: zalogowany.php');
-            $_SESSION['zalogowany'] = true;   
+            if(password_verify($haslo ,$dane['haslo'])){
+                $_SESSION['nazwa'] = $dane['nazwa_uzytkownika']; 
+                header('Location: zalogowany.php');
+                $_SESSION['zalogowany'] = true;
+            } else{
+                echo "Niewłaściwe hasło <a href='Vis.html'>Powrót</a>";
+            }  
         } 
         else {
-            echo "Niewłaściwe hasło lub email  <a href='Vis.html'>Powrót</a>"; 
+            echo "Nie ma podane adresu mail w bazie <a href='Vis.html'>Powrót</a>"; 
         }
         
     }
