@@ -2,5 +2,5 @@
     session_start();
     session_unset();
 
-    header('Location: Vis.html');
+    header('Location: Vis.php');
 ?>

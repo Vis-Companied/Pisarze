@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
@@ -6,7 +9,7 @@
         <meta charset="UTF-8">
         <!-- <meta http-equiv="Content Type" content="text/html;htmlcharset=utf-8"> -->
         <meta name="robots" content="index">
-        <meta name="author" content="MW/RL/BS">
+        <meta name="author" content="MW/RL/BS/MU">
         <meta name="publisher" content="Wydawnictwo Vis">
         <meta name="copyrights" content="Prawa autorskie zastrzeżone">
         <meta name="generator" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV,">
@@ -19,9 +22,14 @@
         <script src="Vis.js"></script>
     </head>
     <body>
-
+        <div>
+            <?php
+                if(isset($_SESSION['error'])){ echo $_SESSION['error']; }
+            ?>
+        </div>
+       
 <!-- przycisk zaloguj się  -->
-     <div class="box-zaloguj">
+     <div style="<?php if(isset($_SESSION['zalogowany'])){ echo 'display: none;';} ?>" class="box-zaloguj">
         <div class="btn btn-zaloguj" id="myBtn" >
             <span>Zaloguj sie</span>
         </div>
@@ -44,9 +52,9 @@
                                   <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
                               <span>Utwórz konto!</span>
-                              <input name="nazwa" type="text" placeholder="Name" />
-                              <input name="email" type="email" placeholder="Email" />
-                              <input name="haslo" type="password" placeholder="Password" />
+                                <input name="nazwa" type="text" placeholder="Name" />
+                                <input name="email" type="email" placeholder="Email" />
+                                <input name="haslo" type="password" placeholder="Password" />
                               <button>Utwórz</button>
                           </form>
                       </div>
@@ -55,14 +63,14 @@
                               <h1>Zaloguj się</h1>
                               <div class="social-container">
                                   <span>Lub zaloguj się za pomocą:</span><br>
-                                  <a href="#" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="https://discord.gg/ExJvEWSM" class="social" target="_blank"><i class="fab fa-discord"></i></a>
-                                  <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://discord.gg/ExJvEWSM" class="social" target="_blank"><i class="fab fa-discord"></i></a>
+                                    <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
                               
                               <input name="email" type="email" placeholder="Email" />
                               <input name="haslo" type="password" placeholder="Password" />
-                              <a href="#">Niepamiętam Hasła.</a>
+                                <a href="#">Niepamiętam Hasła.</a>
                               <button>Zaloguj Się</button>
                           </form>
                       </div>
@@ -103,62 +111,17 @@
             </div>
         </div>
 <!-- TŁO/KONIEC -->
-       
-        <!-- LOGOWANIE MODAL-->
-                
-        <!-- Trigger/Open The Modal -->
-        
-       
-                
-                <!-- KONIEC LOGOWANIA MODAL -->
-        <!--
-         Rejestracja/Logowanie 
-        <div class="container">
-            <main>
 
-            </main>
-            <aside>
-                <div class="logowanie">
-                    <div class="box"> 
-                        <div class="content">
-                            
-                            <div class="Card">
-                                <div class="card middle">
-                                    <div class="front">
-                                        <h3>Vis</h3>
-                                        <img src="img/lefz.svg">
-                                    </div>
 
-                                    <div class="back">
-                                        <div class="back-content middle">
-                                            <div id="Login">        tu sie zaczyna
-                                                <div class="Loginihaslo">
-                                                    <from class="box1" action="Vis.html" method="post">
-                                                        <h1>Login</h1>
-                                                        <input type="text" name="" placeholder="UserName">
-                                                        <input type="password" name="" placeholder="Password">
-                                                        <input type="submit" value="Login">
-                                                    </from>
-                                                </div>
-                                            </div>                  Login konczy sie tutaj
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </aside>
-        </div>  -->
-          
-        <!-- <div id="logoVis">
-        <div class="logo">
-        <img src="img/lefz.svg" ></src>
-        <h2>Vis</h2>   
-        </aside>
-        </div>
-        </div>-->
+
+
+
+
+
+
+
+
+
         <!-- Ikonki do odnośników[Discord, Face Book, github, Code branch(Mozna czyms innym zastapic to :))]
         <i class="fab fa-discord"></i>
         <i class="fab fa-facebook"></i>

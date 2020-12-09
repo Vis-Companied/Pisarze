@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_POST['email']) || !isset($_POST['haslo'])){
-        header('Location: Vis.html'); 
+        header('Location: Vis.php'); 
     }
 
     require_once "config.php";
@@ -24,14 +24,18 @@
             $dane = $rezultat->fetch_assoc();
             if(password_verify($haslo ,$dane['haslo'])){
                 $_SESSION['nazwa'] = $dane['nazwa_uzytkownika']; 
-                header('Location: zalogowany.php');
+                header('Location: main.php');
                 $_SESSION['zalogowany'] = true;
+                unset($_SESSION['error']);
             } else{
-                echo "Niewłaściwe hasło <a href='Vis.html'>Powrót</a>";
+                $_SESSION['error'] = 'Niewłaściwe hasło';
+                header('Location: Vis.php');
+                
             }  
         } 
         else {
-            echo "Nie ma podane adresu mail w bazie <a href='Vis.html'>Powrót</a>"; 
+            $_SESSION['error'] = 'Nie ma podane adresu mail w bazie';
+            header('Location: Vis.php');
         }
         
     }

@@ -1,0 +1,280 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+/* Animacja Lampy./Zmienny motyw itp. */
+body {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 4.2vmin;
+    line-height: 4.7vmin;
+    color: #aca7a7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #919191;
+}
+a {
+    color: #dddcd6;
+}
+#AnLamp {
+    position: fixed;
+    left: 5%;
+    top: 0;
+}
+#Kabel {
+    position: relative;
+    background-color: #000000;
+    width: 2px;
+    height: 150px;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+         -o-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-animation: aniKabel .9s ease-in-out 0s infinite alternate;
+       -moz-animation: aniKabel .9s ease-in-out 0s infinite alternate;
+        -ms-animation: aniKabel .9s ease-in-out 0s infinite alternate;
+         -o-animation: aniKabel .9s ease-in-out 0s infinite alternate;
+            animation: aniKabel .9s ease-in-out 0s infinite alternate;
+}
+#Kabel:after {
+    content: " ";
+    left: -5px;
+    top: 100%;
+    position: absolute;
+    border-bottom: 15px solid #080808;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    height: 0;
+    width: 4px;
+}
+#Lampa {
+    position:relative;
+}
+div#AnLamp > input[value="off"] :checked ~
+#Kabel {
+    -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+       -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+        -ms-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+         -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+            box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+}
+div#AnLamp > input[value="off"]:checked ~
+#Kabel:after {
+    -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+       -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+        -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+         -o-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+            box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+}
+
+div#AnLamp > input {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    top: 120px;
+    margin-left:-45px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+div#AnLamp > input[value="on"] {
+    top: 150px;
+}
+div#AnLamp > input[value="off"] {
+    top: -100px;
+}
+div#AnLamp > input[value="on"]:checked {
+    top: -100px;
+}
+div#AnLamp > input[value="on"]:checked + input[value="off"] {
+    top: 150px;
+}
+
+div#AnLamp > label {
+    width: 51px;
+    height: 51px;
+    top: 164px;
+    position: absolute;
+    left: 0;
+    margin-left: -24px;
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+         -o-border-radius: 100%;
+            border-radius: 100%;
+    -webkit-animation: AnLampa .9s ease-in-out 0s infinite alternate;
+       -moz-animation: AnLampa .9s ease-in-out 0s infinite alternate;
+        -ms-animation: AnLampa .9s ease-in-out 0s infinite alternate;
+         -o-animation: AnLampa .9s ease-in-out 0s infinite alternate;
+            animation: AnLampa .9s ease-in-out 0s infinite alternate;
+}           
+div#AnLamp > input[value="off"]:checked ~ label {
+    background: rgba(255,255,255,0.03);
+    -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+       -moz-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+        -ms-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+         -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+            box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+}
+div#AnLamp > input[value="on"]:checked ~ label {
+    background: rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+       -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+        -ms-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+         -o-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+            box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
+}
+
+div#AnLamp > input[value="off"]:checked ~ label:after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+         -o-border-radius: 100%;
+            border-radius: 100%;
+    border: 2px solid rgba(255,255,255,0.03);
+}
+
+
+
+@-webkit-keyframes aniKabel {
+    from {
+        -webkit-transform:rotate(5deg);
+    } to {
+        -webkit-transform:rotate(-5deg);
+    }
+}
+@-moz-keyframes aniKabel {
+    from {
+        -moz-transform:rotate(5deg);
+    } to {
+        -moz-transform:rotate(-5deg);
+    }
+}
+@-ms-keyframes aniKabel {
+    from {
+        -ms-transform:rotate(5deg);
+    } to {
+        -ms-transform:rotate(-5deg);
+    }
+}
+@-o-keyframes aniKabel {
+    from {
+        -o-transform:rotate(5deg);
+    } to {
+        -o-transform:rotate(-5deg);
+    }
+}
+@keyframes aniKabel {
+    from {
+        transform:rotate(5deg);
+    } to {
+        transform:rotate(-5deg);
+    }
+}
+
+@-webkit-keyframes AnLampa {
+    from {
+        -webkit-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -webkit-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-moz-keyframes AnLampa {
+    from {
+        -moz-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -moz-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-ms-keyframes AnLampa {
+    from {
+        -ms-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -ms-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@-o-keyframes AnLampa {
+    from {
+        -o-transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        -o-transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+@keyframes AnLampa {
+    from {
+        transform: rotate(3deg) translate(-16.4px,-1px);
+    } to {
+        transform: rotate(-3deg) translate(16.4px,-1px);
+    }
+}
+
+@-webkit-keyframes testowo {
+    from {
+        -webkit-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
+    } to {
+        -webkit-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
+    }
+}
+@-moz-keyframes testowo {
+    from {
+        -moz-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
+    } to {
+        -moz-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
+    }
+}
+@-ms-keyframes testowo {
+    from {
+        -ms-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
+    } to {
+        -ms-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
+    }
+}
+@-o-keyframes testowo {
+    from {
+        -o-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
+    } to {
+        -o-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
+    }
+}
+@keyframes testowo {
+    from {
+        transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
+    } to {
+        transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
+    }
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+}
+main {
+    width: 65%;
+}
+aside {
+    width: 30%;
+}

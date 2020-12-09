@@ -3,7 +3,7 @@ session_start();
 
 
     if(!isset($_POST['nazwa']) || !isset($_POST['email']) || !isset($_POST['haslo'])){
-        header('Location: Vis.html'); 
+        header('Location: Vis.php'); 
     }
 
     require_once "config.php";
@@ -27,11 +27,13 @@ session_start();
         $czyistnieje = $zapytanie->num_rows;
 
         if($czyistnieje > 0){
-            echo "Użytkownik z podaną nazwą lub emailem już istnieje <a href='Vis.html'>Powrót</a>";
+            $_SESSION['error'] = "Użytkownik z podaną nazwą lub emailem już istnieje";
+            header('Location: Vis.php');
         }
         else {
             if($dodajuzyt = $connection->query("INSERT INTO konta_uzytkownikow VALUES (NULL,'$nazwa', '$email', '$haslo')")){
-                echo "Rejestracja zakończona pomyślnie  <a href='Vis.html'>Powrót</a>";
+                $_SESSION['error'] = "Rejestracja zakończona pomyślnie";
+                header('Location: Vis.php');
             } 
             else {
                 echo "Ops, something wrong!";
