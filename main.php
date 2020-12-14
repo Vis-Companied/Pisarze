@@ -45,7 +45,20 @@
                 <div id="Lampa"></div>
             </div>
         </header> 
+        #121722 Ciemniejszy kolor 
+        #1a222d Jasniejszy kolor
+
         
+        
+
+
+
+
+
+
+
+
+
        
         
 
@@ -57,9 +70,8 @@
         -->
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-        <script src="Tlo.js"></script>
-        <script src="modal.js"></script>
-
+      
+        
        
     </body>
 </html>

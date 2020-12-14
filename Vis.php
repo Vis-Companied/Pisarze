@@ -18,6 +18,7 @@
         <meta name="last-modified" content="Na bieżąco">
         <meta name="description" content="Vis, sklep internetowy, komputery, części komputerowe, sprzęt komputerowy, RTV">
         <link rel="stylesheet" id="pagestyle" href="Vis.css" type="text/css">
+        <link rel="stylesheet" id="pagestyle" href="Vis.scss">
         <script src="https://kit.fontawesome.com/14208e411b.js" crossorigin="anonymous"></script>
         <script src="Vis.js"></script>
     </head>
@@ -28,14 +29,14 @@
             ?>
         </div>
        
-<!-- przycisk zaloguj się  -->
+<!-- przycisk zaloguj się/START  -->
      <div style="<?php if(isset($_SESSION['zalogowany'])){ echo 'display: none;';} ?>" class="box-zaloguj">
         <div class="btn btn-zaloguj" id="myBtn" >
             <span>Zaloguj sie</span>
         </div>
     </div> 
 <!-- Pzycisk zaloguj się/KONIEC-->
-<!-- Logowanie Rejestracja -->
+<!-- Logowanie Rejestracja/START -->
   
         <div id="myModal" class="modal">
 
@@ -92,9 +93,12 @@
                   </div>
             </div>
         </div>
-        <!-- Logowanie Rejestracja -->
+        <!-- Logowanie Rejestracja/KONIEC -->
+
+
+        
         <header>
-            <!-- Zmienny Motyw --> 
+            <!-- Zmienny Motyw/START --> 
             <div id="AnLamp">
                 <input type="radio" id="Vis.css" name="switch" value="on" onclick="initate()"; />
                 <input type="radio" id="VisN.css" name="switch" value="off" checked="checked" onclick="initate()"; />
@@ -110,8 +114,12 @@
                 <!-- <h1 class="main-title">Tekst Pogrubiony <span class="thin"> Tekst cienki</span> -->
             </div>
         </div>
-<!-- TŁO/KONIEC -->
+<!-- Zmienny Motyw/KONIEC -->
+<!-- Informacja Bar/START -->
+        
+        
 
+<!-- Informacja Bar/KONIEC-->
 
 
 
@@ -132,5 +140,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="Tlo.js"></script>
         <script src="modal.js"></script>
+        
     </body>
 </html>

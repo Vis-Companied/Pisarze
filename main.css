@@ -1,15 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
 /* Animacja Lampy./Zmienny motyw itp. */
 body {
     font-family: Georgia, serif;
     font-style: italic;
     font-size: 4.2vmin;
     line-height: 4.7vmin;
-    color: #0a0a08;
+    color: #fff;
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #0c2d5f;
+    background-color: #000000;
    /* background-image:url('img/viscompanija2.png'); URL */
     background-size: cover;
     background-position: center center ;
@@ -284,3 +285,12 @@ aside {
     width: 30%;
 }
 /* KONIEC ZMIENNY MOTYW LAMPA */
+/* MENU/START */
+
+
+
+
+
+
+
+/* MENU/KONIEC */
