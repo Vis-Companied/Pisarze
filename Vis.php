@@ -22,7 +22,7 @@
         <script src="https://kit.fontawesome.com/14208e411b.js" crossorigin="anonymous"></script>
         <script src="Vis.js"></script>
     </head>
-    <body>
+    <body style="overflow:hidden;">
         <div>
             <?php
                 if(isset($_SESSION['error'])){ echo $_SESSION['error']; }
@@ -116,10 +116,25 @@
         </div>
 <!-- Zmienny Motyw/KONIEC -->
 <!-- Informacja Bar/START -->
-        
-        
-
-<!-- Informacja Bar/KONIEC-->
+<div class="Menju">
+<div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+          <ul id="menu">
+            <a href="#t1"><li class="icon fas fa-info" id="jeden" ></li></a>
+            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dwa"></li></a>
+            <a href="#t3"><li class="icon  fas fa-chess-queen" id="trzy"></li></a>
+            <a href="#t4"><li class="icon fas fa-shopping-basket" id="cztery"></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Informacja Bar/KONIEC -->
 
 
 
