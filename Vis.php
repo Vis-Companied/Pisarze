@@ -116,26 +116,70 @@
         </div>
 <!-- Zmienny Motyw/KONIEC -->
 <!-- Informacja Bar/START -->
-<div class="Menju">
+<div id="Sidebar">
 <div class="ct" id="t1">
   <div class="ct" id="t2">
     <div class="ct" id="t3">
       <div class="ct" id="t4">
          <div class="ct" id="t5">
           <ul id="menu">
-            <a href="#t1"><li class="icon fas fa-info" id="jeden" ></li></a>
+            <a href="#t1"><li class="icon fa fa-youtube-play" id="jeden"></li></a>
             <a href="#t2"><li class="icon fa fa-keyboard-o" id="dwa"></li></a>
-            <a href="#t3"><li class="icon  fas fa-chess-queen" id="trzy"></li></a>
-            <a href="#t4"><li class="icon fas fa-shopping-basket" id="cztery"></li></a>
+            <a href="#t3"><li class="icon fa fa-rocket" id="trzy"></li></a>
+            <a href="#t4"><li class="icon fa fa-dribbble" id="cztery"></li></a>
+            
           </ul>
+          <div class="page" id="p1">
+             <section class="icon fa fa-youtube-play"><span class="title">YT</span><span class="hint"></span></section>  
+          </div>
+          <div class="page" id="p2">
+            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+          </div>  
+          <div class="page" id="p3">
+            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+          </div>
+          <div class="page" id="p4">
+            <section class="icon fa fa-dribbble">
+              <span class="title">Dribbble</span>
+              <p class="hint">
+              </p>
+             
+            </section>
+          </div> 
+          
+           
+          </div> 
         </div>
       </div>
     </div>
   </div>
 </div>
 </div>
-<!-- Informacja Bar/KONIEC -->
 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
