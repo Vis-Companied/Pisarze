@@ -48,7 +48,7 @@
                           <form action="rejestracja.php" method="POST">
                               <h1>Stwórz Użytkownika</h1>
                               <div class="social-container">
-                                  <a href="#" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://www.facebook.com/VisCompanied-106006534977218" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                   <a href="https://discord.gg/ExJvEWSM" class="social" target="_blank"><i class="fab fa-discord"></i></a>
                                   <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
@@ -64,7 +64,7 @@
                               <h1>Zaloguj się</h1>
                               <div class="social-container">
                                   <span>Lub zaloguj się za pomocą:</span><br>
-                                    <a href="#" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/VisCompanied-106006534977218" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://discord.gg/ExJvEWSM" class="social" target="_blank"><i class="fab fa-discord"></i></a>
                                     <a href="https://github.com/Vis-Companied/Pisarze" class="social" target="_blank"><i class="fab fa-github"></i></a>
                               </div>
@@ -123,29 +123,24 @@
       <div class="ct" id="t4">
          <div class="ct" id="t5">
           <ul id="menu">
-            <a href="#t1"><li class="icon fa fa-youtube-play" id="jeden"></li></a>
+            <a href="#t1"><li class="icon fa fa-question" id="jeden"></li></a>
             <a href="#t2"><li class="icon fa fa-keyboard-o" id="dwa"></li></a>
-            <a href="#t3"><li class="icon fa fa-rocket" id="trzy"></li></a>
-            <a href="#t4"><li class="icon fa fa-dribbble" id="cztery"></li></a>
+            <a href="#t3"><li class="icon fa fa-code-fork" id="trzy"></li></a>
+           <!-- <a href="#t4"><li class="icon fa fa-dribbble" id="cztery"></li></a> -->
             
           </ul>
           <div class="page" id="p1">
-             <section class="icon fa fa-youtube-play"><span class="title">YT</span><span class="hint"></span></section>  
+             <section class="icon fa fa-question"><span class="title">Info</span><span class="hint"></span></section>  
           </div>
           <div class="page" id="p2">
-            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+            <section class="icon fa fa-keyboard-o"><span class="title">Code</span></section>
           </div>  
           <div class="page" id="p3">
-            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
-          </div>
+            <section class="icon fa fa-code-fork"><span class="title">Project</span></section>
+       <!--   </div>
           <div class="page" id="p4">
-            <section class="icon fa fa-dribbble">
-              <span class="title">Dribbble</span>
-              <p class="hint">
-              </p>
-             
-            </section>
-          </div> 
+            
+          </div> -->
           
            
           </div> 
