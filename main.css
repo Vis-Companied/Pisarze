@@ -296,7 +296,7 @@ img{
   transform-origin: right bottom;
 }
 
-.card:hover .button{
+.card:hover .przycisk-koszyk{
    transform: scale(1) skewY(0);
 }
 

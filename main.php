@@ -34,10 +34,14 @@
 
 
 
+ <div id="vis">Vis</div> 
+ 
+<div class="gora"> 
+</div> 
+    
 
-
-      
-        <!-- MENU/START -->
+       <!--
+         MENU/START -->
         <div class="menu-wysuwane">
           <nav class="site-nav">
             <button class="site-nav-trigger" type="button" data-toggle="collapse">Menu</button>
@@ -63,12 +67,9 @@
             </div>
           </nav>
   </div>
-      <!-- MENU/KONIEC -->
+   <!-- MENU/KONIEC -->
 
-    <div id="vis">Vis</div> 
-<div class="gora"> 
-</div> 
-    
+   
 
         
 
